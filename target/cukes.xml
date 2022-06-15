@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="22" time="345.717">
+<testcase classname="F01_Register | user can create new account" name="guest user could register with valid data successfully" time="31.298">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "automation" and last name "tester"...............passed
+And user enter date of birth................................................passed
+And user enter email field "doaa@example.com"...............................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02 | users could use login functionality to use their accounts" name="user could login with valid email and password" time="15.119">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with email "doaa@example.com" and password "P@ssw0rd".......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02 | users could use login functionality to use their accounts" name="user could not login with invalid email and password" time="14.747">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with email "invalid@example.com" and password "wrongP@ssw0rd".passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Currencies | user should be able to choose the currency he wants the product to be displayed in" name="user chooses euro currency from the list and price of products is changed to euro sign" time="12.459">
+<system-out><![CDATA[When user choose euro from currencies list..................................passed
+Then the price of four products on home page is changed to euro.............passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for any product on the website by name" time="14.689">
+<system-out><![CDATA[When user search for Mac....................................................passed
+Then user gets relative products for Mac....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for any product on the website by name 2" time="11.593">
+<system-out><![CDATA[When user search for Lenovo.................................................passed
+Then user gets relative products for Lenovo.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for any product on the website by name 3" time="12.226">
+<system-out><![CDATA[When user search for Laptop.................................................passed
+Then user gets relative products for Laptop.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for specific product by SKU" time="12.065">
+<system-out><![CDATA[When user search for N_1020_LU..............................................passed
+Then user gets the only relative product....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for specific product by SKU 2" time="12.876">
+<system-out><![CDATA[When user search for COMP_CUST..............................................passed
+Then user gets the only relative product....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can search for any product on the website and get relative results" name="user can search for specific product by SKU 3" time="12.952">
+<system-out><![CDATA[When user search for AP_MBP_13..............................................passed
+Then user gets the only relative product....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05 Hover on category | user should be able to choose sub-category by hovering on the main category and choose the sub-category" name="user hovers on category on homepage" time="13.554">
+<system-out><![CDATA[When user hovers on category and select subcategory.........................passed
+Then user is redirected to the subcategory page with title equals to subcategory value and url contains desktop.passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_HomeSlider | user will be able to open sliders on the homepage" name="user tries to open first slider on homepage (Nokia slider)" time="14.845">
+<failure message="element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: none;&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 240). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-521SOOQ', ip: '192.168.1.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -&gt; xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]&#10;Session ID: cde34259beababb48ec5615fa719c3aa" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When user clicks on first slider............................................failed
+Then relative product for first slider is displayed.........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: none;">...</a> is not clickable at point (600, 240). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-521SOOQ', ip: '192.168.1.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -> xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]
+Session ID: cde34259beababb48ec5615fa719c3aa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.first_Slider(D06_HomeSliderStepDef.java:18)
+	at ✽.user clicks on first slider(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="F06_HomeSlider | user will be able to open sliders on the homepage" name="user tries to open second slider on homepage (Iphone slider)" time="16.777">
+<failure message="expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[When user clicks on second slider...........................................passed
+Then relative product for second slider is displayed........................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.display_second_Slider_product(D06_HomeSliderStepDef.java:46)
+	at ✽.relative product for second slider is displayed(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website" name="user can follow the website on facebook" time="17.527">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with email "doaa@example.com" and password "P@ssw0rd".......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user clicks on facebook icon...........................................passed
+Then user is redirected to the facebook page of the website.................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website" name="user can follow the website on twitter" time="15.879">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with email "doaa@example.com" and password "P@ssw0rd".......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user clicks on twitter icon............................................passed
+Then user is redirected to the twitter page of the website..................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website" name="user can follow the website on news rss" time="15.699">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user go to login page.................................................passed
+When user login with email "doaa@example.com" and password "P@ssw0rd".......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user clicks on news rss icon...........................................passed
+Then user is redirected to the news rss page of the website.................failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDefinitions.D07_FollowUsStepDef.redirect_to_news_rss_page_of_the_website(D07_FollowUsStepDef.java:61)
+	at ✽.user is redirected to the news rss page of the website(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F07_FollowUs.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website" name="user can follow the website on youtube" time="32.976">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with email "doaa@example.com" and password "P@ssw0rd".......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user clicks on youtube icon............................................passed
+Then user is redirected to the youtube channel of the website...............passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_Wishlist | User can add products to the wishlist" name="success message is displayed after adding product to wishlist" time="11.411">
+<system-out><![CDATA[When user add product to wishlist...........................................passed
+Then success message notification is visible................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_Wishlist | User can add products to the wishlist" name="number of items in wishlist icon on homepage is increased (not equal zero)" time="13.715">
+<system-out><![CDATA[When user add product to wishlist...........................................passed
+Then success message notification is visible................................passed
+And user gets the number of wishlist items after adding the product.........passed
+And number of items in wishlist is increased................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_Wishlist | User can add products to the wishlist" name="item is added to wishlist page" time="16.313">
+<system-out><![CDATA[When user add product to wishlist...........................................passed
+And user clicks on wishlist link............................................passed
+Then user is redirected to wishlist page....................................passed
+And the product exists in wishlist page.....................................passed
+And quantity attribute is larger than zero..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_CompareList | User can add products to the compare list" name="success message is displayed after adding product to compare list" time="11.842">
+<system-out><![CDATA[When user add product to compare list.......................................passed
+Then success message notification is visible for compare list...............passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_CompareList | User can add products to the compare list" name="check that compare table is not empty and has at least one product" time="14.168">
+<system-out><![CDATA[When user add product to compare list.......................................passed
+Then user opens compare list page...........................................passed
+And compare list page has clear list button.................................passed
+And comparison table is displayed...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

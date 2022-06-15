@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods, 3 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can follow the website on news rss&quot;, &quot;F07 Follow us | user should be able to follow the websit...)">runScenario("user can follow the website on news rss", "F07 Follow us | user should be able to follow the websit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user tries to open first slider on homepage (Nokia slider)&quot;, &quot;F06_HomeSlider | user will be able to...)">runScenario("user tries to open first slider on homepage (Nokia slider)", "F06_HomeSlider | user will be able to...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user tries to open second slider on homepage (Iphone slider)&quot;, &quot;F06_HomeSlider | user will be able ...)">runScenario("user tries to open second slider on homepage (Iphone slider)", "F06_HomeSlider | user will be able ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;guest user could register with valid data successfully&quot;, &quot;F01_Register | user can create new accoun...)">runScenario("guest user could register with valid data successfully", "F01_Register | user can create new accoun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user could not login with invalid email and password&quot;, &quot;F02 | users could use login functionality t...)">runScenario("user could not login with invalid email and password", "F02 | users could use login functionality t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can follow the website on youtube&quot;, &quot;F07 Follow us | user should be able to follow the website...)">runScenario("user can follow the website on youtube", "F07 Follow us | user should be able to follow the website...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;success message is displayed after adding product to wishlist&quot;, &quot;F08_Wishlist | User can add produc...)">runScenario("success message is displayed after adding product to wishlist", "F08_Wishlist | User can add produc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user chooses euro currency from the list and price of products is changed to euro sign&quot;, &quot;F03_Curre...)">runScenario("user chooses euro currency from the list and price of products is changed to euro sign", "F03_Curre...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user could login with valid email and password&quot;, &quot;F02 | users could use login functionality to use ...)">runScenario("user could login with valid email and password", "F02 | users could use login functionality to use ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;item is added to wishlist page&quot;, &quot;F08_Wishlist | User can add products to the wishlist&quot;)">runScenario("item is added to wishlist page", "F08_Wishlist | User can add products to the wishlist")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user hovers on category on homepage&quot;, &quot;F05 Hover on category | user should be able to choose sub-ca...)">runScenario("user hovers on category on homepage", "F05 Hover on category | user should be able to choose sub-ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;success message is displayed after adding product to compare list&quot;, &quot;F11_CompareList | User can add...)">runScenario("success message is displayed after adding product to compare list", "F11_CompareList | User can add...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;check that compare table is not empty and has at least one product&quot;, &quot;F11_CompareList | User can ad...)">runScenario("check that compare table is not empty and has at least one product", "F11_CompareList | User can ad...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;number of items in wishlist icon on homepage is increased (not equal zero)&quot;, &quot;F08_Wishlist | User c...)">runScenario("number of items in wishlist icon on homepage is increased (not equal zero)", "F08_Wishlist | User c...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can follow the website on twitter&quot;, &quot;F07 Follow us | user should be able to follow the website...)">runScenario("user can follow the website on twitter", "F07 Follow us | user should be able to follow the website...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.runners.TestRunner" hash-for-method="runScenario(&quot;user can follow the website on facebook&quot;, &quot;F07 Follow us | user should be able to follow the websit...)">runScenario("user can follow the website on facebook", "F07 Follow us | user should be able to follow the websit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.example.runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can follow the website on news rss&quot;, &quot;F07 Follow us | user should be able to follow the websit...)">
+                  </a> <!-- runScenario("user can follow the website on news rss", "F07 Follow us | user should be able to follow the websit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can follow the website on news rss", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website")</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDefinitions.D07_FollowUsStepDef.redirect_to_news_rss_page_of_the_website(D07_FollowUsStepDef.java:61)
+	at ✽.user is redirected to the news rss page of the website(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F07_FollowUs.feature:20)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user tries to open first slider on homepage (Nokia slider)&quot;, &quot;F06_HomeSlider | user will be able to...)">
+                  </a> <!-- runScenario("user tries to open first slider on homepage (Nokia slider)", "F06_HomeSlider | user will be able to...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user tries to open first slider on homepage (Nokia slider)", "F06_HomeSlider | user will be able to open sliders on the homepage")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: none;&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 240). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-521SOOQ&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -&gt; xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]
+Session ID: cde34259beababb48ec5615fa719c3aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.first_Slider(D06_HomeSliderStepDef.java:18)
+	at ✽.user clicks on first slider(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:5)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user tries to open second slider on homepage (Iphone slider)&quot;, &quot;F06_HomeSlider | user will be able ...)">
+                  </a> <!-- runScenario("user tries to open second slider on homepage (Iphone slider)", "F06_HomeSlider | user will be able ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user tries to open second slider on homepage (Iphone slider)", "F06_HomeSlider | user will be able to open sliders on the homepage")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.display_second_Slider_product(D06_HomeSliderStepDef.java:46)
+	at ✽.relative product for second slider is displayed(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:10)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;guest user could register with valid data successfully&quot;, &quot;F01_Register | user can create new accoun...)">
+                  </a> <!-- runScenario("guest user could register with valid data successfully", "F01_Register | user can create new accoun...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("guest user could register with valid data successfully", "F01_Register | user can create new account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">
+                  </a> <!-- runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">
+                  </a> <!-- runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user could not login with invalid email and password&quot;, &quot;F02 | users could use login functionality t...)">
+                  </a> <!-- runScenario("user could not login with invalid email and password", "F02 | users could use login functionality t...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user could not login with invalid email and password", "F02 | users could use login functionality to use their accounts")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can follow the website on youtube&quot;, &quot;F07 Follow us | user should be able to follow the website...)">
+                  </a> <!-- runScenario("user can follow the website on youtube", "F07 Follow us | user should be able to follow the website...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can follow the website on youtube", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">
+                  </a> <!-- runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;success message is displayed after adding product to wishlist&quot;, &quot;F08_Wishlist | User can add produc...)">
+                  </a> <!-- runScenario("success message is displayed after adding product to wishlist", "F08_Wishlist | User can add produc...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("success message is displayed after adding product to wishlist", "F08_Wishlist | User can add products to the wishlist")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user chooses euro currency from the list and price of products is changed to euro sign&quot;, &quot;F03_Curre...)">
+                  </a> <!-- runScenario("user chooses euro currency from the list and price of products is changed to euro sign", "F03_Curre...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user chooses euro currency from the list and price of products is changed to euro sign", "F03_Currencies | user should be able to choose the currency he wants the product to be displayed in")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user could login with valid email and password&quot;, &quot;F02 | users could use login functionality to use ...)">
+                  </a> <!-- runScenario("user could login with valid email and password", "F02 | users could use login functionality to use ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user could login with valid email and password", "F02 | users could use login functionality to use their accounts")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;item is added to wishlist page&quot;, &quot;F08_Wishlist | User can add products to the wishlist&quot;)">
+                  </a> <!-- runScenario("item is added to wishlist page", "F08_Wishlist | User can add products to the wishlist") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("item is added to wishlist page", "F08_Wishlist | User can add products to the wishlist")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for any product on the website by name&quot;, &quot;F04_Search | user can search for any prod...)">
+                  </a> <!-- runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">
+                  </a> <!-- runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user hovers on category on homepage&quot;, &quot;F05 Hover on category | user should be able to choose sub-ca...)">
+                  </a> <!-- runScenario("user hovers on category on homepage", "F05 Hover on category | user should be able to choose sub-ca...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user hovers on category on homepage", "F05 Hover on category | user should be able to choose sub-category by hovering on the main category and choose the sub-category")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;success message is displayed after adding product to compare list&quot;, &quot;F11_CompareList | User can add...)">
+                  </a> <!-- runScenario("success message is displayed after adding product to compare list", "F11_CompareList | User can add...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("success message is displayed after adding product to compare list", "F11_CompareList | User can add products to the compare list")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;check that compare table is not empty and has at least one product&quot;, &quot;F11_CompareList | User can ad...)">
+                  </a> <!-- runScenario("check that compare table is not empty and has at least one product", "F11_CompareList | User can ad...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("check that compare table is not empty and has at least one product", "F11_CompareList | User can add products to the compare list")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can search for specific product by SKU&quot;, &quot;F04_Search | user can search for any product on the ...)">
+                  </a> <!-- runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;number of items in wishlist icon on homepage is increased (not equal zero)&quot;, &quot;F08_Wishlist | User c...)">
+                  </a> <!-- runScenario("number of items in wishlist icon on homepage is increased (not equal zero)", "F08_Wishlist | User c...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("number of items in wishlist icon on homepage is increased (not equal zero)", "F08_Wishlist | User can add products to the wishlist")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can follow the website on twitter&quot;, &quot;F07 Follow us | user should be able to follow the website...)">
+                  </a> <!-- runScenario("user can follow the website on twitter", "F07 Follow us | user should be able to follow the website...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can follow the website on twitter", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can follow the website on facebook&quot;, &quot;F07 Follow us | user should be able to follow the websit...)">
+                  </a> <!-- runScenario("user can follow the website on facebook", "F07 Follow us | user should be able to follow the websit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can follow the website on facebook", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.runners.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'org.example.runners.TestRunner')
+data.setCell(0, 3, 32995);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'org.example.runners.TestRunner')
+data.setCell(1, 3, 31519);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'org.example.runners.TestRunner')
+data.setCell(2, 3, 17548);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'org.example.runners.TestRunner')
+data.setCell(3, 3, 16792);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'org.example.runners.TestRunner')
+data.setCell(4, 3, 16324);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'org.example.runners.TestRunner')
+data.setCell(5, 3, 15889);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'org.example.runners.TestRunner')
+data.setCell(6, 3, 15716);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'org.example.runners.TestRunner')
+data.setCell(7, 3, 15153);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'org.example.runners.TestRunner')
+data.setCell(8, 3, 14875);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'org.example.runners.TestRunner')
+data.setCell(9, 3, 14775);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'org.example.runners.TestRunner')
+data.setCell(10, 3, 14707);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'org.example.runners.TestRunner')
+data.setCell(11, 3, 14184);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'org.example.runners.TestRunner')
+data.setCell(12, 3, 13723);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'org.example.runners.TestRunner')
+data.setCell(13, 3, 13573);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'org.example.runners.TestRunner')
+data.setCell(14, 3, 12979);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'org.example.runners.TestRunner')
+data.setCell(15, 3, 12890);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'org.example.runners.TestRunner')
+data.setCell(16, 3, 12481);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'org.example.runners.TestRunner')
+data.setCell(17, 3, 12239);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'org.example.runners.TestRunner')
+data.setCell(18, 3, 12083);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'org.example.runners.TestRunner')
+data.setCell(19, 3, 11853);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'org.example.runners.TestRunner')
+data.setCell(20, 3, 11620);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'org.example.runners.TestRunner')
+data.setCell(21, 3, 11420);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.runners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@2c77344f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("guest user could register with valid data successfully", "F01_Register | user can create new accoun...)</span>
+                <span class="method-start">1987 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user could login with valid email and password", "F02 | users could use login functionality to use ...)</span>
+                <span class="method-start">33508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user could not login with invalid email and password", "F02 | users could use login functionality t...)</span>
+                <span class="method-start">48662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user chooses euro currency from the list and price of products is changed to euro sign", "F03_Curre...)</span>
+                <span class="method-start">63438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</span>
+                <span class="method-start">75919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</span>
+                <span class="method-start">90627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for any product on the website by name", "F04_Search | user can search for any prod...)</span>
+                <span class="method-start">102247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</span>
+                <span class="method-start">114487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</span>
+                <span class="method-start">126571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can search for specific product by SKU", "F04_Search | user can search for any product on the ...)</span>
+                <span class="method-start">139461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user hovers on category on homepage", "F05 Hover on category | user should be able to choose sub-ca...)</span>
+                <span class="method-start">152440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("user tries to open first slider on homepage (Nokia slider)", "F06_HomeSlider | user will be able to...)</span>
+                <span class="method-start">166013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("user tries to open second slider on homepage (Iphone slider)", "F06_HomeSlider | user will be able ...)</span>
+                <span class="method-start">180926 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can follow the website on facebook", "F07 Follow us | user should be able to follow the websit...)</span>
+                <span class="method-start">197719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can follow the website on twitter", "F07 Follow us | user should be able to follow the website...)</span>
+                <span class="method-start">215267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("user can follow the website on news rss", "F07 Follow us | user should be able to follow the websit...)</span>
+                <span class="method-start">231157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can follow the website on youtube", "F07 Follow us | user should be able to follow the website...)</span>
+                <span class="method-start">246874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("success message is displayed after adding product to wishlist", "F08_Wishlist | User can add produc...)</span>
+                <span class="method-start">279869 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("number of items in wishlist icon on homepage is increased (not equal zero)", "F08_Wishlist | User c...)</span>
+                <span class="method-start">291289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("item is added to wishlist page", "F08_Wishlist | User can add products to the wishlist")</span>
+                <span class="method-start">305012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("success message is displayed after adding product to compare list", "F11_CompareList | User can add...)</span>
+                <span class="method-start">321336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("check that compare table is not empty and has at least one product", "F11_CompareList | User can ad...)</span>
+                <span class="method-start">333189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">347375 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

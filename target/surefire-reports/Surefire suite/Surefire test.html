@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 15 17:13:09 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>347 seconds (347892 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can follow the website on news rss", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDefinitions.D07_FollowUsStepDef.redirect_to_news_rss_page_of_the_website(D07_FollowUsStepDef.java:61)
+	at ?.user is redirected to the news rss page of the website(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F07_FollowUs.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace560165559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace560165559'><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDefinitions.D07_FollowUsStepDef.redirect_to_news_rss_page_of_the_website(D07_FollowUsStepDef.java:61)
+	at ?.user is redirected to the news rss page of the website(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F07_FollowUs.feature:20)
+</pre></div></td>
+<td>15</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tries to open first slider on homepage (Nokia slider)", "F06_HomeSlider | user will be able to open sliders on the homepage"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: none;&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 240). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-521SOOQ&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -&gt; xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]
+Session ID: cde34259beababb48ec5615fa719c3aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.first_Slider(D06_HomeSliderStepDef.java:18)
+	at ?.user clicks on first slider(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:5)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515282013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515282013'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: none;&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 240). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-521SOOQ&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -&gt; xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]
+Session ID: cde34259beababb48ec5615fa719c3aa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.first_Slider(D06_HomeSliderStepDef.java:18)
+	at ?.user clicks on first slider(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:5)
+</pre></div></td>
+<td>14</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tries to open second slider on homepage (Iphone slider)", "F06_HomeSlider | user will be able to open sliders on the homepage"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.display_second_Slider_product(D06_HomeSliderStepDef.java:46)
+	at ?.relative product for second slider is displayed(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:10)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2084634607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084634607'><pre>java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefinitions.D06_HomeSliderStepDef.display_second_Slider_product(D06_HomeSliderStepDef.java:46)
+	at ?.relative product for second slider is displayed(file:///C:/Users/shahd/IdeaProjects/nopcommerce2/src/main/resources/features/F06_HomeSlider.feature:10)
+</pre></div></td>
+<td>16</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | user can create new account"</td>
+<td></td>
+<td>31</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>14</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could not login with invalid email and password", "F02 | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>14</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can follow the website on youtube", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website"</td>
+<td></td>
+<td>32</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "success message is displayed after adding product to wishlist", "F08_Wishlist | User can add products to the wishlist"</td>
+<td></td>
+<td>11</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user chooses euro currency from the list and price of products is changed to euro sign", "F03_Currencies | user should be able to choose the currency he wants the product to be displayed in"</td>
+<td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with valid email and password", "F02 | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>15</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "item is added to wishlist page", "F08_Wishlist | User can add products to the wishlist"</td>
+<td></td>
+<td>16</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for any product on the website by name", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>11</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user hovers on category on homepage", "F05 Hover on category | user should be able to choose sub-category by hovering on the main category and choose the sub-category"</td>
+<td></td>
+<td>13</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "success message is displayed after adding product to compare list", "F11_CompareList | User can add products to the compare list"</td>
+<td></td>
+<td>11</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check that compare table is not empty and has at least one product", "F11_CompareList | User can add products to the compare list"</td>
+<td></td>
+<td>14</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search for specific product by SKU", "F04_Search | user can search for any product on the website and get relative results"</td>
+<td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "number of items in wishlist icon on homepage is increased (not equal zero)", "F08_Wishlist | User can add products to the wishlist"</td>
+<td></td>
+<td>13</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can follow the website on twitter", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website"</td>
+<td></td>
+<td>15</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can follow the website on facebook", "F07 Follow us | user should be able to follow the website from different social media websites and be redirected to its social media website"</td>
+<td></td>
+<td>17</td>
+<td>org.example.runners.TestRunner@631330c</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.example.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 350.106 s <<< FAILURE! - in org.example.runners.TestRunner
+org.example.runners.TestRunner.runScenario  Time elapsed: 14.917 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: none;">...</a> is not clickable at point (600, 240). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-521SOOQ', ip: '192.168.1.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cde34259beababb48ec5615fa719c3aa, clickElement {id=d06bd568-163f-4e16-b686-59d73695f235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\shahd\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:13842/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cde34259beababb48ec5615fa719c3aa)] -> xpath: /html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]]
+Session ID: cde34259beababb48ec5615fa719c3aa
+
+org.example.runners.TestRunner.runScenario  Time elapsed: 16.788 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphones6] but found [https://demo.nopcommerce.com/]
+
+org.example.runners.TestRunner.runScenario  Time elapsed: 15.716 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+
